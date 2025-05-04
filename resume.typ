@@ -39,15 +39,12 @@
       icon: fa-envelope, content: "wangfiox@hotmail.com", link: "mailto:wangfiox@hotmail.com",
     ), (
       icon: fa-github, content: "github.com/kingfiox", link: "https://github.com/kingfiox",
-    ), (
-      icon: fa-github, content: "blog.kingfiox.work", link: "https://blog.kingfiox.work",
     ),
   )
 ][
   #h(2em)
 
-  作为一名计算机专业的学生，我对嵌入式体系结构有浓厚的兴趣，比较喜欢
-  “玩板子”，喜欢软硬件协同开发。具有相对扎实的编程基础，热衷于刷各大学校的实验。在校期间参与实验室项目，对nvm存储有一些了解。
+  作为一名计算机专业的学生，我对嵌入式体系结构有浓厚的兴趣，具有相对扎实的编程基础。在校期间积极参加有挑战的比赛、参与实验室项目、参与学生工作。
 
 ]
 
@@ -58,8 +55,7 @@
 ][
   *哈尔滨工业大学（深圳）* · 计算机科学
 
-  综测: 79/330 （大一）
-  综测: 181/314 （大二）
+  学分绩: 82.78/100
 ]
 
 == #fa-wrench 专业技能
@@ -72,9 +68,7 @@
 
 == #fa-award 获奖情况
 
-#item([ *华为毕昇杯* ], [ *（国）三等奖* ], date[ 2024 年 8 月 ])
-
-#item([ *大一年度项目* ], [ *（校）优秀奖* ], date[ 2024 年 2 月 ])
+#item([ *华为毕昇杯* ], [ *三等奖* ], date[ 2024 年 8 月 ])
 
 == #fa-code 项目经历
 
@@ -84,79 +78,37 @@
 
 #tech[ Rust, RISC-V, 编译原理 ]
 
-将 Sysy(subset of C) 编译成 riscv 汇编， 能被 riscv-gcc 汇编&链接成 elf,
-并在开发版上运行。
+实现功能：将 Sysy(subset of C) 编译成 RISC-V 汇编
 
 个人主要完成以下工作：
 
-- 基于弦图寄存器分配
-- 基于表调度的指令调度
-- 基于Pettis-Hansen code layout的块重排（二进制优化）
-- 从中端IR到后端IR的指令选择
-- 一些窥孔优化, 指令融合, 死代码消除等
+- 基于弦图的寄存器分配、基于表调度的指令调度、基于Pettis-Hansen code layout的块重排、指令选择
+- 参考 musl libc 的 pthread_create，实现了精简的线程库（用于自动并行）
 
 #item(
-  link("https://github.com/KINGFIOX/rv64gc-thrd", [ *mini open mp, 线程库* ]), [ *个人项目* ], date[ 2024 年 10 月 ],
-)
-
-#tech[ RISC-V, C, 操作系统 ]
-
-这个是与毕昇杯编译器配套的项目，用于自动并行。
-一开始是用汇编写的(2024/04)，赛后用 C with inline asm重写了一遍(2024/10)
-
-- 参考了 musl libc 中 pthread_create 的实现
-- 使用了一些编译器魔法，例如控制寄存器分配等
-- 使用了一些 clang 的 bultin 魔法，例如获取栈指针的位置等
-- 使用了 clone 系统调用，精心选择线程创建的参数
-
-#item(
-  link("https://github.com/KINGFIOX/minirv", [ *RISC-V五级流水* ]), [ *学校大作业(附加题)* ], date[ 2024 年 06 月 – 2024 年 08 月 ],
+  link("https://github.com/KINGFIOX/minirv", [ *RISC-V五级流水* ]), [ ], date[ 2024 年 06 月 – 2024 年 08 月 ],
 )
 
 #tech[ Chisel, Verilog, RISC-V, 计算机组成原理 ]
 
 实验报告 #fa-github https://github.com/KINGFIOX/minirv/tree/main/report
 
-- 基于 Chisel 实现的五级流水
-- 实现了静态分支预测、数据前递
+- 基于 Chisel 实现的五级流水，实现了静态分支预测、数据前递
 
 #item(
-  link("https://github.com/KINGFIOX/xv6-oslab24-hitsz", [ *xv6 mit os lab* ]), [ *学校实验* ], date[ 2024 年 10 月 – 2024 年 12 月 ],
+  link("https://github.com/KINGFIOX/xv6-oslab24-hitsz", [ *xv6: mit os lab* ]), [ ], date[ 2024 年 10 月 – 2024 年 12 月 ],
 )
-
-#tech[ C, RISC-V, 操作系统 ]
-
 #item(
-  link("https://github.com/KINGFIOX/ics2024", [ *南京大学计算机基础实验* ]), [ *学校实验* ], date[ 2024 年 10 月 – 2024 年 12 月 ],
+  link("https://github.com/KINGFIOX/ics2024", [ *南京大学计算机基础实验* ]), [ ], date[ 2024 年 10 月 – 2024 年 12 月 ],
 )
-
-#tech[ C, i386, 计算机组成原理, 操作系统 ]
-
-#item(
-  link("https://github.com/KINGFIOX/pintos", [ *北京大学操作系统实验* ]), [ *学校实验* ], date[ 2024 年 11 月 – 2024 年 12 月 ],
-)
-
-#tech[ C, i386, 操作系统 ]
-
-#item(
-  link("https://github.com/KINGFIOX/organ23-hitsz", [ *哈深计组实验* ]), [ *学校实验(附加题)* ], date[ 2024 年 05 月 – 2024 年 06 月 ],
-)
-
-#tech[ Chisel, Verilog ]
-
-- 完成了 ICache, DCache, 在学校实验的基础上, 实现了可调参的组相联 Cache
 
 == #fa-graduation-cap 科研经历
 
-#item(link("", [ *PVLDBv18_2025 二作在发* ]), [ ], date[ ])
-
-#tech[ C++, linux, nvm, 多线程 ]
-
-大一下(2023 年 06 月)进组，主要学习了 nvm 存储的特性，C++, 多线程的相关知识
+#item(link("", [ *PVLDBv18_2025 二作在发* ]), [ PDPH: A Performant Dynamic Perfect Hashing via Hybrid Construction for Large-scale Dynamic Workloads ], date[ ])
 
 == #fa-building-columns 学生工作经历
 
-#item([ *计算机十班班长* ], [], date[ 2022 年 09 月 – 至今 ])
+#item([ *计算机十班班长* ], [ ], date[ 2022 年 09 月 – 至今 ])
 
 #item(
   [ *计算机学院学生会权益部成员* ], [], date[ 2023 年 3 月 – 2024 年 6 月 ],

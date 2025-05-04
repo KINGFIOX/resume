@@ -164,6 +164,7 @@
 // 技术: 字体变细
 #let tech(body) = block({
   set text(weight: "extralight")
+  text("技术栈：")
   body
 })
 
