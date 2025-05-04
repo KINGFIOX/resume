@@ -69,13 +69,11 @@
 == #fa-graduation-cap 教育背景
 
 #sidebar(with-line: true, side-width: 12%)[
-  2024.06
-
-  2020.09
+  2022.09 至今
 ][
   *哈尔滨工业大学（深圳）* · 计算机科学
 
-  核心学分绩： 86 / 100 · Rank: 140/330 (freshman)
+  Rank: 79/330 （大一）
 ]
 
 
@@ -119,9 +117,12 @@
 将 Sysy(subset of C) 编译成 riscv 汇编，
 能被 riscv-gcc 汇编&链接成 elf 文件，能在开发版上运行。
 
-- 设计实现了基于 RBAC 的多租户权限管理系统
-- 开发了容器资源动态伸缩和负载均衡模块
-- 使用 Prometheus 和 Grafana 构建监控告警系统
+个人主要完成以下工作：
+
+- 基于弦图寄存器分配
+- 基于表调度的指令调度
+- 基于Pettis-Hansen code layout的块重排（二进制优化）
+- 从中端IR到后端IR的指令选择
 
 #item(
   link(
