@@ -160,7 +160,51 @@
 - 基于 Chisel 实现的五级流水
 - 实现了静态分支预测、数据前递
 
+#item(
+  link(
+    "https://github.com/KINGFIOX/xv6-oslab24-hitsz",
+    [ *xv6 mit os lab* ],
+  ),
+  [ *学校实验* ],
+  date[ 2024 年 10 月 – 2024 年 12 月 ],
+)
 
+#tech[ C, RISC-V, 操作系统 ]
+
+#item(
+  link(
+    "https://github.com/KINGFIOX/ics2024",
+    [ *南京大学计算机基础实验* ],
+  ),
+  [ *学校实验* ],
+  date[ 2024 年 10 月 – 2024 年 12 月 ],
+)
+
+#tech[ C, i386, 计算机组成原理, 操作系统 ]
+
+#item(
+  link(
+    "https://github.com/KINGFIOX/pintos",
+    [ *北京大学操作系统实验* ],
+  ),
+  [ *学校实验* ],
+  date[ 2024 年 11 月 – 2024 年 12 月 ],
+)
+
+#tech[ C, i386, 操作系统 ]
+
+#item(
+  link(
+    "https://github.com/KINGFIOX/organ23-hitsz",
+    [ *哈深计组实验* ],
+  ),
+  [ *学校实验(附加题)* ],
+  date[ 2024 年 05 月 – 2024 年 06 月 ],
+)
+
+#tech[ Chisel, Verilog ]
+
+- 完成了 ICache, DCache, 在学校实验的基础上, 实现了可调参的组相联
 
 == #fa-building-columns 学生工作经历
 
