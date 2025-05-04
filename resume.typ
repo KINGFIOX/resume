@@ -34,42 +34,35 @@
   // 如果需要姓名及联系信息居中，请删除下面关于头像的三行参数，并取消header-center的注释
   //header-center: true,
 
-  // 如果不需要头像，则将下面三行的参数注释或删除
-  photograph: "profile.jpg",
-  photograph-width: 10em,
-  gutter-width: 2em,
+  // // 如果不需要头像，则将下面三行的参数注释或删除
+  // photograph: "profile.jpg",
+  // photograph-width: 10em,
+  // gutter-width: 2em,
 )[
-  = 某某
+  = 王靳
 
   #info(
     color: theme-color,
     (
       icon: fa-phone,
-      content: "(+86) 133-3333-3333",
-    ),
-    (
-      icon: fa-building-columns,
-      content: "某某大学",
-    ),
-    (
-      icon: fa-graduation-cap,
-      content: "某某专业",
+      content: "(+86) 158-1687-0583",
     ),
     (
       icon: fa-envelope,
-      content: "liming@example.com",
-      link: "mailto:liming@example.com",
+      content: "wangfiox@hotmail.com",
+      link: "mailto:wangfiox@hotmail.com",
     ),
     (
       icon: fa-github,
-      content: "github.com/liming-dev",
-      link: "https://github.com/liming-dev",
+      content: "github.com/kingfiox",
+      link: "https://github.com/kingfiox",
     ),
   )
 ][
   #h(2em)
 
   *简历内容由 AI 生成，不代表真实内容。*作为一名计算机专业的学生，我专注于全栈开发和云计算技术。具有扎实的编程基础，热衷于开源项目贡献。在校期间参与多个实验室项目，对人工智能和分布式系统有深入研究。
+
 ]
 
 
@@ -80,45 +73,33 @@
 
   2020.09
 ][
-  *某某大学* · 某某学院 · 某某专业
+  *哈尔滨工业大学（深圳）* · 计算机科学
 
-  GPA: 5 / 5 · Rank: 0%
+  核心学分绩： 86 / 100 · Rank: 140/330 (freshman)
 ]
 
 
 == #fa-wrench 专业技能
 
 #sidebar(with-line: false, side-width: 12%)[
-  *操作系统*
-  
-  *掌握*
-  
   *熟悉*
-
-  *了解*
 ][
-  #fa-linux Linux, #h(0.5em) #fa-windows Windows
-  
-  React, JavaScript, Python
-  
-  Vue, TypeScript, Node.js
-
-  Webpack, Java
+  #fa-linux Linux, Rust, Haskell, C/C++, Chisel, Verilog
 ]
 
 
 == #fa-award 获奖情况
 
 #item(
-  [ *互联网+ 大学生创新创业大赛* ],
-  [ *省级金奖* ],
-  date[ 2022 年 10 月 ],
+  [ *华为毕昇杯* ],
+  [ *（国）三等奖* ],
+  date[ 2024 年 8 月 ],
 )
 
 #item(
-  [ *ACM-ICPC 区域赛* ],
-  [ *铜奖* ],
-  date[ 2021 年 12 月 ],
+  [ *大一年度项目* ],
+  [ *（校）优秀奖* ],
+  date[ 2024 年 2 月 ],
 )
 
 
@@ -126,16 +107,17 @@
 
 #item(
   link(
-    "https://github.com/liming-dev/cloud-platform",
-    [ *轻量级容器云平台* ],
+    "https://github.com/dusk-phantom/duskphantom",
+    [ *华为毕昇杯* ],
   ),
-  [ *实验室项目* ],
-  date[ 2022 年 03 月 – 2022 年 12 月 ],
+  [ *比赛参赛项目* ],
+  date[ 2024 年 02 月 – 2024 年 12 月 ],
 )
 
-#tech[ Golang, Docker, Kubernetes ]
+#tech[ Rust, RISC-V, 编译原理 ]
 
-基于 Kubernetes 的容器管理平台，提供Web界面的容器编排服务
+将 Sysy(subset of C) 编译成 riscv 汇编，
+能被 riscv-gcc 汇编&链接成 elf 文件，能在开发版上运行。
 
 - 设计实现了基于 RBAC 的多租户权限管理系统
 - 开发了容器资源动态伸缩和负载均衡模块
@@ -159,10 +141,17 @@
 - 支持缓存自动过期和 LRU 淘汰策略
 
 
-== #fa-building-columns 校园经历
+== #fa-building-columns 学生工作经历
 
 #item(
-  [ *计算机学院学生科创中心主席* ],
+  [ *计算机十班班长* ],
   [],
-  date[ 2022 年 09 月 – 2023 年 06 月 ],
+  date[ 2022 年 09 月 – 至今 ],
 )
+
+#item(
+  [ *计算机学院学生会权益部成员* ],
+  [],
+  date[ 2023 年 3 月 – 2024 年 6 月 ],
+)
+
