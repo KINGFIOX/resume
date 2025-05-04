@@ -144,6 +144,23 @@
 - 使用了一些 clang 的 bultin 魔法，例如获取栈指针的位置等
 - 使用了 clone 系统调用，精心选择线程创建的参数
 
+#item(
+  link(
+    "https://github.com/KINGFIOX/minirv",
+    [ *RISC-V五级流水* ],
+  ),
+  [ *学校大作业(附加题)* ],
+  date[ 2024 年 06 月 – 2024 年 08 月 ],
+)
+
+#tech[ Chisel, Verilog, RISC-V, 计算机组成原理 ]
+
+实验报告 #fa-github https://github.com/KINGFIOX/minirv/tree/main/report
+
+- 基于 Chisel 实现的五级流水
+- 实现了静态分支预测、数据前递
+
+
 
 == #fa-building-columns 学生工作经历
 
