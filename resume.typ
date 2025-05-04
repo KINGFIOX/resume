@@ -39,12 +39,15 @@
       icon: fa-envelope, content: "wangfiox@hotmail.com", link: "mailto:wangfiox@hotmail.com",
     ), (
       icon: fa-github, content: "github.com/kingfiox", link: "https://github.com/kingfiox",
+    ), (
+      icon: fa-github, content: "blog.kingfiox.work", link: "https://blog.kingfiox.work",
     ),
   )
 ][
   #h(2em)
 
-  *简历内容由 AI 生成，不代表真实内容。*作为一名计算机专业的学生，我专注于全栈开发和云计算技术。具有扎实的编程基础，热衷于开源项目贡献。在校期间参与多个实验室项目，对人工智能和分布式系统有深入研究。
+  作为一名计算机专业的学生，我对嵌入式体系结构有浓厚的兴趣，比较喜欢
+  “玩板子”，喜欢软硬件协同开发。具有相对扎实的编程基础，热衷于刷各大学校的实验。在校期间参与实验室项目，对nvm存储有一些了解。
 
 ]
 
@@ -55,7 +58,7 @@
 ][
   *哈尔滨工业大学（深圳）* · 计算机科学
 
-  Rank: 79/330 （大一）
+  综测: 79/330 （大一）
 ]
 
 == #fa-wrench 专业技能
@@ -80,8 +83,8 @@
 
 #tech[ Rust, RISC-V, 编译原理 ]
 
-将 Sysy(subset of C) 编译成 riscv 汇编， 能被 riscv-gcc 汇编&链接成 elf
-文件，能在开发版上运行。
+将 Sysy(subset of C) 编译成 riscv 汇编， 能被 riscv-gcc 汇编&链接成 elf,
+并在开发版上运行。
 
 个人主要完成以下工作：
 
@@ -140,9 +143,15 @@
 
 #tech[ Chisel, Verilog ]
 
-- 完成了 ICache, DCache, 在学校实验的基础上, 实现了可调参的组相联
+- 完成了 ICache, DCache, 在学校实验的基础上, 实现了可调参的组相联 Cache
 
-==
+== #fa-graduation-cap 科研经历
+
+#item(link("", [ *PVLDBv18_2025 二作在发* ]), [ ], date[ ])
+
+#tech[ C++, linux, nvm, 多线程 ]
+
+大一下(2023 年 06 月)进组，主要学习了 nvm 存储的特性，C++, 多线程的相关知识
 
 == #fa-building-columns 学生工作经历
 
