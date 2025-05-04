@@ -24,16 +24,9 @@
   // 标题颜色
   theme-color: theme-color,
   // 控制纸张的边距
-  margin: (
-    top: 1.5cm,
-    bottom: 2cm,
-    left: 2cm,
-    right: 2cm,
-  ),
-
+  margin: (top: 1.5cm, bottom: 2cm, left: 2cm, right: 2cm),
   // 如果需要姓名及联系信息居中，请删除下面关于头像的三行参数，并取消header-center的注释
   //header-center: true,
-
   // // 如果不需要头像，则将下面三行的参数注释或删除
   // photograph: "profile.jpg",
   // photograph-width: 10em,
@@ -42,20 +35,10 @@
   = 王靳
 
   #info(
-    color: theme-color,
-    (
-      icon: fa-phone,
-      content: "(+86) 158-1687-0583",
-    ),
-    (
-      icon: fa-envelope,
-      content: "wangfiox@hotmail.com",
-      link: "mailto:wangfiox@hotmail.com",
-    ),
-    (
-      icon: fa-github,
-      content: "github.com/kingfiox",
-      link: "https://github.com/kingfiox",
+    color: theme-color, (icon: fa-phone, content: "(+86) 158-1687-0583"), (
+      icon: fa-envelope, content: "wangfiox@hotmail.com", link: "mailto:wangfiox@hotmail.com",
+    ), (
+      icon: fa-github, content: "github.com/kingfiox", link: "https://github.com/kingfiox",
     ),
   )
 ][
@@ -64,7 +47,6 @@
   *简历内容由 AI 生成，不代表真实内容。*作为一名计算机专业的学生，我专注于全栈开发和云计算技术。具有扎实的编程基础，热衷于开源项目贡献。在校期间参与多个实验室项目，对人工智能和分布式系统有深入研究。
 
 ]
-
 
 == #fa-graduation-cap 教育背景
 
@@ -76,7 +58,6 @@
   Rank: 79/330 （大一）
 ]
 
-
 == #fa-wrench 专业技能
 
 #sidebar(with-line: false, side-width: 12%)[
@@ -85,37 +66,22 @@
   #fa-linux Linux, Rust, Haskell, C/C++, Chisel, Verilog
 ]
 
-
 == #fa-award 获奖情况
 
-#item(
-  [ *华为毕昇杯* ],
-  [ *（国）三等奖* ],
-  date[ 2024 年 8 月 ],
-)
+#item([ *华为毕昇杯* ], [ *（国）三等奖* ], date[ 2024 年 8 月 ])
 
-#item(
-  [ *大一年度项目* ],
-  [ *（校）优秀奖* ],
-  date[ 2024 年 2 月 ],
-)
-
+#item([ *大一年度项目* ], [ *（校）优秀奖* ], date[ 2024 年 2 月 ])
 
 == #fa-code 项目经历
 
 #item(
-  link(
-    "https://github.com/dusk-phantom/duskphantom",
-    [ *华为毕昇杯* ],
-  ),
-  [ *比赛参赛项目* ],
-  date[ 2024 年 02 月 – 2024 年 12 月 ],
+  link("https://github.com/dusk-phantom/duskphantom", [ *华为毕昇杯* ]), [ *比赛参赛项目* ], date[ 2024 年 02 月 – 2024 年 12 月 ],
 )
 
 #tech[ Rust, RISC-V, 编译原理 ]
 
-将 Sysy(subset of C) 编译成 riscv 汇编，
-能被 riscv-gcc 汇编&链接成 elf 文件，能在开发版上运行。
+将 Sysy(subset of C) 编译成 riscv 汇编， 能被 riscv-gcc 汇编&链接成 elf
+文件，能在开发版上运行。
 
 个人主要完成以下工作：
 
@@ -126,12 +92,7 @@
 - 一些窥孔优化, 指令融合, 死代码消除等
 
 #item(
-  link(
-    "https://github.com/KINGFIOX/rv64gc-thrd",
-    [ *mini open mp, 线程库* ],
-  ),
-  [ *个人项目* ],
-  date[ 2024 年 10 月 ],
+  link("https://github.com/KINGFIOX/rv64gc-thrd", [ *mini open mp, 线程库* ]), [ *个人项目* ], date[ 2024 年 10 月 ],
 )
 
 #tech[ RISC-V, C, 操作系统 ]
@@ -145,12 +106,7 @@
 - 使用了 clone 系统调用，精心选择线程创建的参数
 
 #item(
-  link(
-    "https://github.com/KINGFIOX/minirv",
-    [ *RISC-V五级流水* ],
-  ),
-  [ *学校大作业(附加题)* ],
-  date[ 2024 年 06 月 – 2024 年 08 月 ],
+  link("https://github.com/KINGFIOX/minirv", [ *RISC-V五级流水* ]), [ *学校大作业(附加题)* ], date[ 2024 年 06 月 – 2024 年 08 月 ],
 )
 
 #tech[ Chisel, Verilog, RISC-V, 计算机组成原理 ]
@@ -161,62 +117,38 @@
 - 实现了静态分支预测、数据前递
 
 #item(
-  link(
-    "https://github.com/KINGFIOX/xv6-oslab24-hitsz",
-    [ *xv6 mit os lab* ],
-  ),
-  [ *学校实验* ],
-  date[ 2024 年 10 月 – 2024 年 12 月 ],
+  link("https://github.com/KINGFIOX/xv6-oslab24-hitsz", [ *xv6 mit os lab* ]), [ *学校实验* ], date[ 2024 年 10 月 – 2024 年 12 月 ],
 )
 
 #tech[ C, RISC-V, 操作系统 ]
 
 #item(
-  link(
-    "https://github.com/KINGFIOX/ics2024",
-    [ *南京大学计算机基础实验* ],
-  ),
-  [ *学校实验* ],
-  date[ 2024 年 10 月 – 2024 年 12 月 ],
+  link("https://github.com/KINGFIOX/ics2024", [ *南京大学计算机基础实验* ]), [ *学校实验* ], date[ 2024 年 10 月 – 2024 年 12 月 ],
 )
 
 #tech[ C, i386, 计算机组成原理, 操作系统 ]
 
 #item(
-  link(
-    "https://github.com/KINGFIOX/pintos",
-    [ *北京大学操作系统实验* ],
-  ),
-  [ *学校实验* ],
-  date[ 2024 年 11 月 – 2024 年 12 月 ],
+  link("https://github.com/KINGFIOX/pintos", [ *北京大学操作系统实验* ]), [ *学校实验* ], date[ 2024 年 11 月 – 2024 年 12 月 ],
 )
 
 #tech[ C, i386, 操作系统 ]
 
 #item(
-  link(
-    "https://github.com/KINGFIOX/organ23-hitsz",
-    [ *哈深计组实验* ],
-  ),
-  [ *学校实验(附加题)* ],
-  date[ 2024 年 05 月 – 2024 年 06 月 ],
+  link("https://github.com/KINGFIOX/organ23-hitsz", [ *哈深计组实验* ]), [ *学校实验(附加题)* ], date[ 2024 年 05 月 – 2024 年 06 月 ],
 )
 
 #tech[ Chisel, Verilog ]
 
 - 完成了 ICache, DCache, 在学校实验的基础上, 实现了可调参的组相联
 
+==
+
 == #fa-building-columns 学生工作经历
 
-#item(
-  [ *计算机十班班长* ],
-  [],
-  date[ 2022 年 09 月 – 至今 ],
-)
+#item([ *计算机十班班长* ], [], date[ 2022 年 09 月 – 至今 ])
 
 #item(
-  [ *计算机学院学生会权益部成员* ],
-  [],
-  date[ 2023 年 3 月 – 2024 年 6 月 ],
+  [ *计算机学院学生会权益部成员* ], [], date[ 2023 年 3 月 – 2024 年 6 月 ],
 )
 
