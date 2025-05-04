@@ -123,23 +123,26 @@
 - 基于表调度的指令调度
 - 基于Pettis-Hansen code layout的块重排（二进制优化）
 - 从中端IR到后端IR的指令选择
+- 一些窥孔优化, 指令融合, 死代码消除等
 
 #item(
   link(
-    "https://github.com/liming-dev/distributed-cache",
-    [ *分布式缓存系统* ],
+    "https://github.com/KINGFIOX/rv64gc-thrd",
+    [ *mini open mp, 线程库* ],
   ),
   [ *个人项目* ],
-  date[ 2023 年 01 月 – 2023 年 04 月 ],
+  date[ 2024 年 10 月 ],
 )
 
-#tech[ Golang, Redis, etcd ]
+#tech[ RISC-V, C, 操作系统 ]
 
-一个支持分布式部署的高性能缓存系统
+这个是与毕昇杯编译器配套的项目，用于自动并行。
+一开始是用汇编写的(2024/04)，赛后用 C with inline asm重写了一遍(2024/10)
 
-- 实现了一致性哈希算法进行数据分片
-- 采用 Raft 协议保证集群一致性
-- 支持缓存自动过期和 LRU 淘汰策略
+- 参考了 musl libc 中 pthread_create 的实现
+- 使用了一些编译器魔法，例如控制寄存器分配等
+- 使用了一些 clang 的 bultin 魔法，例如获取栈指针的位置等
+- 使用了 clone 系统调用，精心选择线程创建的参数
 
 
 == #fa-building-columns 学生工作经历
