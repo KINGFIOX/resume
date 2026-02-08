@@ -1,8 +1,8 @@
-// 字体
+// 字体 (macOS 默认字体)
 #let font = (
-  main: "IBM Plex Serif",
-  mono: "IBM Plex Mono",
-  cjk: "Noto Serif CJK SC",
+  main: "Times New Roman",
+  mono: "Menlo",
+  cjk: "PingFang SC",
 )
 
 // 图标
