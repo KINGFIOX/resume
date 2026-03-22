@@ -1,3 +1,4 @@
 *.pdf
 !simple-resume.pdf
 !resume.pdf
+.direnv
