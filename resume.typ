@@ -125,7 +125,7 @@
 
 
 - *软件*：基于南京大学 PA 实验，使用 C 语言实现 RV32IM 指令集模拟器（NEMU），可运行 RT-Thread 操作系统；使用 Rust 搭建仿真平台；接入 lightSSS 快照管理
-- *硬件*：设计 RV32I 单发射乱序处理器并接入 SoC。采用前后端解耦的架构；采用值捕捉的寄存器重命名方案；采用基于 PLRU 的 ICache；采用 RAS+GShare+BHT 的动态分支预测
+- *硬件*：设计 RV32I 单发射乱序处理器并接入 SoC。采用前后端解耦的架构；采用值捕捉的寄存器重命名方案；采用基于 PLRU 的 ICache；采用 RAS+GShare+IJTC 的动态分支预测
 - *工程实践*：使用 nix-flake 管理外部依赖 NVBoard、Spike、Capstone；外部依赖均采用 Meson+Nix 静态分发
 
 #item(
